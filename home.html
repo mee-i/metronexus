@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desain</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div id="dummy"></div>
+
+    <nav class="navbar">
+        <div class="navbar-background"></div> 
+        <div class="navbar-content"> 
+            <div class="logo">
+                <img src="/pngegg.png" alt="Gambar Pemandangan" width="90" height="90">
+                <div class="sub-logo">
+                    <h3>Kota Bandung</h3>
+                    <p>Ibu Kota Parahyangan</p>
+                </div>
+            </div>
+            <div class="main_list" id="mainListDiv">
+                <ul>
+                    <li><a href="#dummy">Beranda</a></li>
+                    <li>
+                        <a href="#about" class="dropdown-toggle" onclick="toggleDropdown(event)">Pengumuman &#9662;</a>
+                        <div class="dropdown">
+                            <ul>
+                                <li><a href="#announcement1">Pengumuman 1</a></li>
+                                <li><a href="#announcement2">Pengumuman 2</a></li>
+                                <li><a href="#announcement3">Pengumuman 3</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#service">Transportasi</a></li>
+                    <li><a href="#contact">Layanan Publik</a></li>
+                </ul>
+            </div>
+            <div class="navTrigger">
+                <i></i><i></i><i></i>
+            </div>
+        </div>
+    </nav>
+    
+<section class="home">
+    <h1>KOTA BANDUNG</h1>
+</section>
+
+<script src="/dropdown.js"></script>
+<script src="/scroll.js"></script>
+    
+</body>
+</html>
