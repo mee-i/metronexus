@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desain</title>
     <link rel="stylesheet" href="/web-design/style.css">
+    <link rel="stylesheet" href="/web-design/animations.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
@@ -27,7 +28,7 @@
                 <ul>
                     <li><a href="#dummy">Beranda</a></li>
                     <li>
-                        <a href="#about" class="dropdown-toggle" onclick="toggleDropdown(event)">
+                        <a href="#about" class="dropdown-toggle" onclick="toggleDropdown(event, this)">
                             <span>Tentang Kota</span>
                             <span>&#9662;</span>
                         </a>
@@ -40,7 +41,7 @@
                         </div>
                     </li>
                     <li>
-                        <a href="#about" class="dropdown-toggle" onclick="toggleDropdown(event)">
+                        <a href="#about" class="dropdown-toggle" onclick="toggleDropdown(event, this)">
                             <span>Transportasi</span>
                             <span>&#9662;</span>
                         </a>
@@ -53,7 +54,7 @@
                         </div>
                     </li>   
                     <li>
-                        <a href="#about" class="dropdown-toggle" onclick="toggleDropdown(event)">
+                        <a href="#about" class="dropdown-toggle" onclick="toggleDropdown(event, this)">
                             <span>Layanan Publik</span>
                             <span>&#9662;</span>
                         </a>
