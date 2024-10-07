@@ -5,7 +5,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 
@@ -52,159 +51,166 @@ html body{
 }
 
 /* Konten navbar */
-    .navbar-content {
-        position: relative; 
-        z-index: 2; 
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%; 
-      
-    }
+.navbar-content {
+    position: relative; 
+    z-index: 2; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; 
+    
+}
 
-    .logo {
-        display: flex;
-        align-items: center;
-        cursor: none; 
-        user-select: none; 
-        pointer-events: none; 
-    }
-    
+.logo {
+    display: flex;
+    align-items: center;
+    cursor: none; 
+    user-select: none; 
+    pointer-events: none; 
+}
 
-    .main_list ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-    }
 
-    .main_list ul li {
-        margin: 0 15px;
-    }
+.main_list ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 
-    .main_list ul li a {
-        color: white;
-        text-decoration: none;
-        font-size: 18px;
-        transition: color 0.3s;
-        font-family: "Poppins", system-ui;
-        font-weight: 300;
-        font-style: normal;
-    }
+.main_list ul li {
+    margin: 0 15px;
+}
 
-    .sub-logo{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        pointer-events: auto;
-        color: rgb(255, 255, 255);
-    }
+.main_list ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+    font-family: "Poppins", system-ui;
+    font-weight: 300;
+    font-style: normal;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 
-    .sub-logo > h3{
-        font-family: "Poppins", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        font-size: 23px;
-    }
+.sub-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    pointer-events: auto;
+    color: rgb(255, 255, 255);
+}
 
-    .sub-logo > p{
-        font-family: "Poppins", sans-serif;
-        font-weight: 300;
-        font-style: normal;
-        font-size: 13px;
-    }
-    
-    .main_list ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
-    
-    .main_list ul li {
-        position: relative; 
-        display: inline-block; 
-    }
-    
-    .main_list ul li a {
-        padding: 10px 15px;
-        text-decoration: none; 
-    }
-    
-    .dropdown {
-        display: none; 
-        position: absolute;
-        top: 100%; 
-        left: 0; 
-        background-color: rgba(27, 24, 24, 0.594); 
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-        z-index: 1000; 
-        white-space: nowrap; 
-    }
-    
-    .main_list ul li:hover .dropdown {
-        display: block; 
-    }
-    
-    .dropdown ul {
-        list-style: none; 
-        padding: 0;
-        margin: 0;
-        display: flex; 
-        flex-direction: column;
-    }
-    
-    .dropdown ul li {
-        margin: 0;
-    }
-    
-    .dropdown ul li a {
-        color: rgb(255, 255, 255); 
-        padding: 10px 20px; 
-        display: block; 
-    }
-    
-    .dropdown ul li a:hover {
-        background-color: #80bbd1; 
-    }
-    
-    .main_list ul li a:hover {
-        color: #040406; 
-    }
-    
-    
-    .navTrigger {
-        display: none;
-        flex-direction: column;
-        cursor: pointer;
-    }
+.sub-logo > h3 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 23px;
+    text-wrap: nowrap;
+}
 
-    .navTrigger i {
-        width: 25px;
-        height: 3px;
-        background: white;
-        margin: 3px 0;
-        transition: 0.3s;
-    }
+.sub-logo > p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 13px;
+    text-wrap: nowrap;
+}
+
+.main_list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main_list ul li {
+    position: relative; 
+    display: inline-block; 
+}
+
+.main_list ul li a {
+    padding: 10px 15px;
+    text-decoration: none; 
+}
+
+.dropdown {
+    display: none; 
+    position: absolute;
+    top: 100%; 
+    left: 0; 
+    background-color: rgba(27, 24, 24, 0.594); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    z-index: 1000; 
+    white-space: nowrap; 
+}
+
+.main_list ul li:hover .dropdown {
+    display: block; 
+}
+
+.dropdown ul {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+    display: flex; 
+    flex-direction: column;
+}
+
+.dropdown ul li {
+    margin: 0;
+}
+
+.dropdown ul li a {
+    color: rgb(255, 255, 255); 
+    padding: 10px 20px; 
+    display: block; 
+}
+
+.dropdown ul li a:hover {
+    background-color: #80bbd1; 
+}
+
+.main_list ul li a:hover {
+    color: #040406; 
+}
+
+
+.navTrigger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.navTrigger i {
+    width: 25px;
+    height: 3px;
+    background: white;
+    margin: 3px 0;
+    transition: 0.3s;
+}
 /* Responsive */
 @media (max-width: 768px) {
-  .main_list {
-      display: none;
-      position: absolute;
-     
-      top: 60px;
-      right: 0;
-      width: 100%;
-      text-align: center;
-      transition: max-height 0.3s ease-in-out;
-  }
+    .main_list {
+        display: none;
+        position: absolute;
+        
+        top: 60px;
+        right: 0;
+        width: 100%;
+        text-align: center;
+        transition: max-height 0.3s ease-in-out;
+    }
   
-  .main_list.show {
-      display: block;
-  }
-  
-  .navTrigger {
-      display: flex;
-  }
+    .main_list.show {
+        display: block;
+    }
+    
+    .navTrigger {
+        display: flex;
+    }
 }
 
 /* ini bagian home */
@@ -264,28 +270,28 @@ html body{
 
 
 /* slider */
-.slider{
+.slider {
     min-width: 100vw;
     max-width: 100vw;
     min-height: 100vh;
     max-height: 100vh;
 }
 
-.info-kota{
+.info-kota {
     min-width: 100vw;
     max-width: 100vw;
     min-height: 100vh;
     max-height: 100vh;
 }
 
-.tecknologi{
+.teknologi {
     min-width: 100vw;
     max-width: 100vw;
     min-height: 100vh;
     max-height: 100vh;
 }
 
-.credit{
+.credit {
     min-width: 100vw;
     max-width: 100vw;
     min-height: 100vh;
