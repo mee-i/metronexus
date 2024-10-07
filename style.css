@@ -164,6 +164,7 @@ html body{
 
 .dropdown ul li {
     margin: 0;
+    width: 100%;
 }
 
 .dropdown ul li a {
