@@ -303,6 +303,7 @@ html body{
 
 /* slider */
 .slider {
+    margin-top: 20px;
     width: 100vw;
     height: 100vh;
 }
@@ -312,14 +313,13 @@ html body{
     height: fit-content;
 }
 
-.tombol-uji-coba {
-    background: gray;
-    font-family: Poppins;
+.slider-button {
     display: inline-block;
-    margin: 10px;
-    padding: 10px;
+    margin: 5px;
     border-radius: 5px;
-    color: white;
+    color: gray;
+    font-weight: 700;
+    font-size: 2em;
     user-select: none;
 }
 
@@ -330,12 +330,33 @@ html body{
     gap: 10px;
 }
 
-.slider-container .kotak {
+.slider-container .box {
     height: 200px;
     width: calc(100vw - 100px);
-    background-color: blue;
+    background-color: #cfcfcf;
     border-radius: 10px;
     display: inline-block;
+}
+
+.slide-pos {
+    display: flex;
+    gap: 5px;
+    flex-direction: row;
+    align-items: center;
+}
+
+.slide-pos > div {
+    height: 5px;
+    background-color: #afafaf;
+    border-radius: 5px;
+    transition: width .3s;
+}
+
+.slider-button-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .info-kota {
