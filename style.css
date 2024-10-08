@@ -33,7 +33,7 @@ html body{
     padding: 10px 0;
     z-index: 1000;
 
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, .3);
     backdrop-filter: none;
     transition: 0.2s;
 }
@@ -333,6 +333,7 @@ html body{
 .slider-container .box {
     height: 200px;
     width: calc(100vw - 100px);
+    max-width: 600px;
     background-color: #cfcfcf;
     border-radius: 10px;
     display: inline-block;

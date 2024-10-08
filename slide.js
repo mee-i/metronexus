@@ -16,9 +16,20 @@ function setPosition() {
     var element = sliderElements[scrollings];
     var x = element.getBoundingClientRect().left + elemenDiscroll.scrollLeft - 40;
     elemenDiscroll.scroll({top: 0, left: x, behavior: 'smooth'});
-    console.log('tombols', tombols, 'elementDiscroll', elemenDiscroll, 'scrollings', scrollings, 'x', x);
+    console.log('tombols', tombols, 'elementDiscroll', elemenDiscroll, 'scrollings', scrollings, 'x', x, 'scrollWidth', elemenDiscroll.scrollWidth);
     resetSliderIndicator();
-    slideIndicator.children[scrollings].style.width = '15px';
+    if (x + 20 > elemenDiscroll.scrollWidth - window.innerWidth) {
+        slideIndicator.children[slideIndicator.children.length - 1].style.width = '15px';
+        if (scrollings < sliderElements.length - 1) scrollings--;
+    }
+    else if (x - 20 < 0) {
+        slideIndicator.children[0].style.width = '15px';
+        scrollings = 0;
+    }
+    else {
+        slideIndicator.children[scrollings].style.width = '15px';
+    }
+
 }
 
 function initSlider() {
@@ -49,6 +60,7 @@ tombols[1].onclick = function() {
     setPosition();
 }
 
+window.addEventListener('resize', setPosition);
 
 
 // document.addEventListener('load', scrollLoad);
