@@ -30,25 +30,30 @@ html body{
     height: 80px; 
     display: flex;
     align-items: center;
-    padding: 10px 20px;
+    padding: 10px 0;
     z-index: 1000;
 
-    
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: none;
+    transition: 0.2s;
 }
+
+/* .wave-thing {
+    position: relative;
+    top: 10px;
+} */
 
 
 /* Latar belakang navbar */
-.navbar-background {
-    background-color: rgb(58, 55, 55); 
+/* .navbar-content {
+    background-color: rgb(58, 55, 55, .3); 
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: 0.2; 
-    backdrop-filter: blur(20%); 
-    z-index: 1; 
-}
+    z-index: 1;
+} */
 
 /* Konten navbar */
 .navbar-content {
@@ -58,7 +63,7 @@ html body{
     justify-content: space-between;
     align-items: center;
     width: 100%; 
-    
+    padding: 0 20px;
 }
 
 .logo {
@@ -141,12 +146,25 @@ html body{
     position: absolute;
     top: 100%; 
     left: 0; 
-    background-color: rgba(27, 24, 24, 0.594); 
+    background-color: rgba(24, 24, 24); 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
     z-index: 1000; 
     white-space: nowrap;
-    animation-name: dropdown;
+    /* animation-name: dropdown-show; */
+    opacity: 0;
+    
+}
+
+.dropdown.show {
+    animation-name: dropdown-show;
     animation-duration: .3s;
+    animation-fill-mode: forwards;
+}
+
+.dropdown.hide {
+    animation-name: dropdown-hide;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
 }
 
 .main_list ul li:hover .dropdown {
@@ -196,14 +214,15 @@ html body{
     transition: 0.3s;
 }
 /* Responsive */
-@media (max-width: 768px) {
+@media (max-width: 910px) {
     .main_list {
         display: none;
         position: absolute;
         
         top: 60px;
+        left: 0;
         right: 0;
-        width: 100%;
+        width: 100vw;
         text-align: center;
         transition: max-height 0.3s ease-in-out;
     }
@@ -211,10 +230,19 @@ html body{
     .main_list.show {
         display: block;
     }
+
+    .main_list.show > ul {
+        position: relative;
+        top: 25px;
+        flex-direction: column;
+        background-color: rgb(90, 90, 90);
+    }
     
     .navTrigger {
         display: flex;
     }
+
+
 }
 
 /* ini bagian home */

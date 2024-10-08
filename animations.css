@@ -1,4 +1,4 @@
-@keyframes dropdown {
+@keyframes dropdown-show {
     from {
         transform-origin: top;
         opacity: 0;
@@ -8,5 +8,18 @@
         transform-origin: top;
         opacity: 1;
         transform: scale(100%, 100%);
+    }
+}
+
+@keyframes dropdown-hide {
+    from {
+        transform-origin: top;
+        opacity: 1;
+        transform: scale(100%, 100%);
+    }
+    to {
+        transform-origin: top;
+        opacity: 0;
+        transform: scale(100%, 0);
     }
 }

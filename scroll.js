@@ -75,14 +75,16 @@ $(document).ready(function () {
        
         if (scrollTop >= homeHeight + dummyHeight) {
             $('.navbar').css({
-                'background-color': 'rgba(0, 0, 0, 0.1)',
-                'backdrop-filter': 'blur(10px)'
+                'background-color': 'rgba(0, 0, 0, .3)',
+                'backdrop-filter': 'blur(10px)',
+                'transition': 'all .2s',
             });
         } else {
            
             $('.navbar').css({
-                'background-color': 'transparent',
-                'backdrop-filter': 'none'
+                'background-color': 'rgba(0, 0, 0, 0.2)',
+                'backdrop-filter': 'none',
+                'transition': 'all .2s',
             });
         }
     });
