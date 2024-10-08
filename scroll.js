@@ -6,12 +6,12 @@ function range(start, end, step = 1) {
     return result;
 }
 
-const NavbarItems = [
-    document.querySelector(),
-    document.querySelector(),
-    document.querySelector(),
-    document.querySelector(),
-];
+// const NavbarItems = [
+//     document.querySelector(),
+//     document.querySelector(),
+//     document.querySelector(),
+//     document.querySelector(),
+// ];
 
 // window.addEventListener('scroll', function() {
 //     const navbar = document.querySelector('.navbar');
