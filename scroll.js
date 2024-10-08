@@ -1,3 +1,18 @@
+function range(start, end, step = 1) {
+    var result = [];
+    for (var i = start; i <= end; i += step) {
+        result.push(i);
+    }
+    return result;
+}
+
+const NavbarItems = [
+    document.querySelector(),
+    document.querySelector(),
+    document.querySelector(),
+    document.querySelector(),
+];
+
 // window.addEventListener('scroll', function() {
 //     const navbar = document.querySelector('.navbar');
 
@@ -90,3 +105,17 @@ $(document).ready(function () {
     });
 });
 
+const options = {
+    root: null,
+    rootMargin: "0px",
+    threshold: .8,
+};
+
+const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+        console.log('isIntersecting == ', entry.isIntersecting);
+        console.log('intersection', entry.intersectionRatio);
+    });
+}, options);
+
+observer.observe(document.querySelector("section.home"));
