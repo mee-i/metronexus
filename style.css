@@ -317,10 +317,15 @@ html body{
     display: inline-block;
     margin: 5px;
     border-radius: 5px;
-    color: gray;
+    color: #afafaf; 
     font-weight: 700;
     font-size: 2em;
     user-select: none;
+    transition: color .2s;
+}
+
+.slider-button:hover {
+    color: gray;
 }
 
 .slider-container {
