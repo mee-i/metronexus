@@ -1,3 +1,18 @@
+function range(start, end, step = 1) {
+    var result = [];
+    for (var i = start; i <= end; i += step) {
+        result.push(i);
+    }
+    return result;
+}
+
+// const NavbarItems = [
+//     document.querySelector(),
+//     document.querySelector(),
+//     document.querySelector(),
+//     document.querySelector(),
+// ];
+
 // window.addEventListener('scroll', function() {
 //     const navbar = document.querySelector('.navbar');
 
@@ -75,16 +90,32 @@ $(document).ready(function () {
        
         if (scrollTop >= homeHeight + dummyHeight) {
             $('.navbar').css({
-                'background-color': 'rgba(0, 0, 0, 0.1)',
-                'backdrop-filter': 'blur(10px)'
+                'background-color': 'rgba(0, 0, 0, .3)',
+                'backdrop-filter': 'blur(10px)',
+                'transition': 'all .2s',
             });
         } else {
            
             $('.navbar').css({
-                'background-color': 'transparent',
-                'backdrop-filter': 'none'
-            });
+                'background-color': 'rgba(0, 0, 0, .3)',
+                'backdrop-filter': 'none',
+                'transition': 'all .2s',
+            })
         }
     });
 });
 
+const options = {
+    root: null,
+    rootMargin: "0px",
+    threshold: .8,
+};
+
+const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+        console.log('isIntersecting == ', entry.isIntersecting);
+        console.log('intersection', entry.intersectionRatio);
+    });
+}, options);
+
+observer.observe(document.querySelector("section.home"));
