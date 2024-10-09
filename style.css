@@ -216,7 +216,8 @@ body{
     margin: 3px 0;
     transition: 0.3s;
 }
-/* Responsive */
+
+
 @media (max-width: 910px) {
     .main_list {
         display: none;
@@ -267,7 +268,12 @@ body{
     overflow-x: hidden;
 }
 
+@media (max-width: 400px) {
+    .img >img{
+        height: 92.8vh;
+    }
 
+}
 
 
 .home > h1{
