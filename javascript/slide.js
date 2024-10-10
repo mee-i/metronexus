@@ -77,7 +77,7 @@ const slideIndicator = document.querySelector('.slide-pos');
 
 var scrollings = Math.floor(sliderElements.length / 2); // Mulai dari tengah
 
-console.log('tombols', tombols, 'elementDiscroll', elemenDiscroll, 'scrollings', scrollings);
+// console.log('tombols', tombols, 'elementDiscroll', elemenDiscroll, 'scrollings', scrollings);
 
 function setPosition() {
     var element = sliderElements[scrollings];
@@ -90,7 +90,7 @@ function setPosition() {
         behavior: 'smooth'
     });
 
-    console.log('tombols', tombols, 'elementDiscroll', elemenDiscroll, 'scrollings', scrollings, 'x', x, 'scrollWidth', elemenDiscroll.scrollWidth);
+    // console.log('tombols', tombols, 'elementDiscroll', elemenDiscroll, 'scrollings', scrollings, 'x', x, 'scrollWidth', elemenDiscroll.scrollWidth);
     
     resetSliderIndicator();
     

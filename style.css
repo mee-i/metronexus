@@ -310,9 +310,9 @@ body {
     font-weight: 900;
     font-style: normal;
     color: rgba(255, 255, 255, 0.21);
-    user-select: none;
     -webkit-user-select: none;
     -moz-user-select: none;
+    user-select: none;
 }
 
 /* format svg */
