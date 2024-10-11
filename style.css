@@ -343,9 +343,12 @@ body{
 }
 
 .slider-container .box {
-    height: 30vh;
-    width: calc(100vw - 100px);
-    max-width: 95vw;
+    height: 50vw;
+    max-height: 400px;
+    /* width: calc(100vw - 100px); */
+    width: 80vw;
+    max-width: 640px;
+    /* max-width: 95vw; */
     background-color: #cfcfcf;
     border-radius: 10px;
     display: inline-block;
