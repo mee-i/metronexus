@@ -90,8 +90,8 @@ $(document).ready(function () {
        
         if (scrollTop >= homeHeight + dummyHeight) {
             $('.navbar').css({
-                'background-color': 'rgba(0, 0, 0, .3)',
-                'backdrop-filter': 'blur(10px)',
+                'background-color': 'rgba(80, 80, 80, .6)',
+                'backdrop-filter': 'blur(20px)',
                 'transition': 'all .2s',
             });
         } else {

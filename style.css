@@ -419,6 +419,7 @@ body {
     background-color: rgb(240, 240, 240);
     padding: 20px;
     width: 100%;
+    cursor: pointer;
     /* Lebar mengisi penuh dalam .box-u */
     max-width: 500px;
     font-size: 18px;
@@ -429,7 +430,7 @@ body {
 
 .box-program:hover {
     transform: scale(1.05);
-    box-shadow: 0px 0px 10px 1px rgba(51, 51, 51, 0.4);
+    box-shadow: 0px 5px 15px 1px rgba(0, 0, 0, .2);
 }
 
 .box-program h2 {
@@ -894,6 +895,8 @@ footer {
     width: 100%;
     border-radius: 15px;
     display: flex;
+    padding-top: 40px;
+    gap: 60px;
     align-items: center;
     justify-content: center;
     flex-wrap: center;
@@ -904,7 +907,7 @@ footer {
     width: 350px;
     height: 220px;
     background-color: gainsboro;
-    border-radius: 10px;
+    border-radius: 30px;
     background-size: cover;
     background-repeat: no-repeat;
     object-fit: cover;
@@ -920,18 +923,29 @@ footer {
     justify-content: center;
     flex-wrap: wrap;
     gap: 25px;
-    margin-top: 120px;
+    /* margin-top: 120px; */
     transition: var(--transition-10);
+    border-radius: 0 50px 50px 0;
+    /* background-color: #ddf0ff; */
+    background: linear-gradient(to right, #ffffff 0, #ddf0ff 20%);
+    margin: 0 30px 0 0;
+    padding: 10px 0;
 }
 
-.fitur:hover {
+/* .fitur:hover {
     transform: scale(1.05);
-}
-.fitur:hover .image {
+    background-color: #00FF0010;
+} */
+.fitur:hover .image:hover {
     filter: drop-shadow(var(--drop-shadow-2));
+    transform: scale(1.05);
+    border-radius: 50px;
 }
 .fitur.right {
+    border-radius: 50px 0 0 50px;
     flex-direction: row-reverse;
+    margin: 0 0 0 30px;
+    background: linear-gradient(to left, #ffffff 0, #ddf0ff 20%);
 }
 
 .fitur .deskripsi {
