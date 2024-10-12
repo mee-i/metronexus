@@ -193,6 +193,7 @@ body {
 
 .main_list ul li:hover .dropdown {
   display: block;
+  width: 100%;
 }
 
 .dropdown ul {
@@ -211,7 +212,6 @@ body {
 
 .dropdown ul li a {
   color: rgb(255, 255, 255);
-  padding: 10px 20px;
   display: block;
 }
 
