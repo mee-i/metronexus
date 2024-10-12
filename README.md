@@ -2,7 +2,7 @@
 
 Welcome to the **Web Design** repository, created by the NaN team! This project is for infofest competition.
 <br>
-Web Preview: [Click here to see this web preview](https://ancloud.my.id/preview/web-design)
+Web Preview: [Click here to see this web preview](https://ancloud.my.id/preview/metronexus)
 
 ## Table of Contents
 
