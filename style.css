@@ -1058,7 +1058,7 @@ footer {
     color: 0;
 }
 
-.join-metronexus h1, button {
+.join-metronexus h1, .join-metronexus button {
     filter: drop-shadow(var(--drop-shadow-3));
 }
 
