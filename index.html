@@ -28,27 +28,26 @@
                     <li><a href="#dummy">Beranda</a></li>
                     <li>
                         <a href="#about" class="dropdown-toggle" onclick="toggleDropdown(event, this)">
-                            <span>Tentang Kota</span>
+                            <span>About The City</span>
                             <span>&#9662;</span>
                         </a>
                         <div class="dropdown">
                             <ul>
-                                <li><a href="#info-kota">Informasi</a></li>
-                                <li><a href="#teknologi">Teknologi</a></li>
-                                <li><a href="#pariwisata">Pariwisata</a></li>
+                                <li><a href="#informasi">Information</a></li>
+                                <li><a href="#pariwisata">Tourism</a></li>
                             </ul>
                         </div>
                     </li>
                     <li>
                         <a href="#about" class="dropdown-toggle" onclick="toggleDropdown(event, this)">
-                            <span>Transportasi</span>
+                            <span>Transportation</span>
                             <span>&#9662;</span>
                         </a>
                         <div class="dropdown">
                             <ul>
-                                <li><a href="#kereta-cepat">Kereta Cepat</a></li>
-                                <li><a href="#mobil-terbang">Mobil Terbang</a></li>
-                                <li><a href="#kereta-tanpa-rel">Kereta Tanpa Rel</a></li>
+                                <li><a href="#transportasi">High Speed Train</a></li>
+                                <li><a href="#transportasi">Flying Vehicles</a></li>
+                                <li><a href="#transportasi">Trackless Train</a></li>
                             </ul>
                         </div>
                     </li>
@@ -59,11 +58,11 @@
                         </a>
                         <div class="dropdown">
                             <ul>
-                                <li><a href="#komunitas">Komunitas</a></li>
-                                <li><a href="#aduan-warga">Aduan Warga</a></li>
-                                <li><a href="#peringatan-bencana">Peringatan Bencana</a></li>
-                                <li><a href="#simata">Simata</a></li>
-                                <li><a href="#saran-masukan">Saran dan Masukan</a></li>
+                                <li><a href="#community">Community</a></li>
+                                <li><a href="#citizen-report">Citizen Report</a></li>
+                                <li><a href="#disaster-alert">Disaster Alert</a></li>
+                                <li><a href="#city-sight">City Sight</a></li>
+                                <li><a href="#contact-us">Feed Back</a></li>
                             </ul>
                         </div>
                     </li>
@@ -115,19 +114,19 @@
         </div>
         <div class="box-u">
             <div class="box-program">
-                <h2>Simata</h2>
-                <p>Simata adalah program CCTV kota yang dirancang untuk meningkatkan keamanan dan kenyamanan masyarakat.
+                <h2>City Sight</h2>
+                <p>City Sight adalah program CCTV kota yang dirancang untuk meningkatkan keamanan dan kenyamanan masyarakat.
                 </p>
                 <button class="button" id="opendetailBtn-1">Selengkapnya ></button>
             </div>
             <div class="box-program">
-                <h2>Aduan Warga</h2>
-                <p>Aduan Warga adalah platform untuk menyampaikan keluhan, atau saran. Melalui layanan ini, warga dapat
+                <h2>Citizen Report</h2>
+                <p>Citizen Report adalah platform untuk menyampaikan keluhan, atau saran. Melalui layanan ini, warga dapat
                     melaporkan berbagai isu.</p>
                 <button class="button" id="opendetailBtn-2">Selengkapnya ></button>
             </div>
             <div class="box-program">
-                <h2>Peringatan Bencana</h2>
+                <h2>Disaster Alert</h2>
                 <p>Platform ini memberikan peringatan dini kepada warga dan pihak berwenang terkait potensi bencana
                     alam.</p>
                 <button class="button" id="opendetailBtn-3">Selengkapnya ></button>
@@ -163,7 +162,7 @@
                 </div>
             </div>
 
-            <div class="fitur">
+            <div class="fitur" id="transportasi">
                 <div class="image" style="background-image: url(images/kereta-tanpa-rel.jpeg);"></div>
                 <div class="deskripsi">
                     <h2>Transportasi Modern</h2>
@@ -176,7 +175,7 @@
     </section>
 
     <!-- ini bagian tempat pariwisata maps -->
-    <section class="informasi">
+    <section class="informasi" id="informasi">
         <div class="sub-title">
             <h1>Tentang Kota</h1>
             <div class="sub-title-line"></div>
@@ -188,7 +187,7 @@
                 <p>Metronexus adalah sebuah kota pintar yang menggabungkan teknologi canggih dengan kehidupan perkotaan yang dinamis. Kota ini dirancang untuk menciptakan lingkungan yang terhubung, efisien, dan berkelanjutan, di mana setiap aspek kehidupan mulai dari transportasi, ruang publik, hingga layanan digital dioptimalkan untuk kenyamanan dan kemajuan masyarakat.</p>
             </div>
         </div>
-        <div class="deskripsi">
+        <div class="deskripsi" id="pariwisata">
             <div class="isi">
                 <div class="image" style="background-position: center; background-image: url(images/mountain-view.jpg); background-size: cover; background-repeat: no-repeat; object-fit: cover; filter: brightness(70%);"></div>
                 <h1>Pariwisata</h1>
@@ -211,7 +210,7 @@
             <div class="left-section">
                 <h2>METRONEXUS</h2>
                 <p>Masa depan kota pintar</p>
-                <h3>Contact Us</h3>
+                <h3 id="contact-us">Contact Us</h3>
                 <ul>
                     <li>
                         <i class="material-symbols-rounded">mail</i>
@@ -229,29 +228,28 @@
             </div>
             <div class="right-section">
                 <div class="section">
-                    <h3>Tentang Kota</h3>
+                    <h3>About The City</h3>
                     <ul>
-                        <li>Info</li>
-                        <li>Teknologi</li>
-                        <li>Pariwisata</li>
+                        <li><a href="#informasi">Information</a></li>
+                        <li><a href="#pariwisata">Tourism</a></li>
                     </ul>
                 </div>
                 <div class="section">
-                    <h3>Transportasi</h3>
+                    <h3>Transportation</h3>
                     <ul>
-                        <li>Kereta Cepat</li>
-                        <li>Mobil Terbang</li>
-                        <li>Kereta Tanpa Rel</li>
+                        <li><a href="#transportasi">High Speed Train</a></li>
+                        <li><a href="#transportasi">Flying Vehicles</a></li>
+                        <li><a href="#transportasi">Trackless Train</a></li>
                     </ul>
                 </div>
                 <div class="section">
-                    <h3>Layanan Publik</h3>
+                    <h3>Public Service</h3>
                     <ul>
-                        <li>Komunitas</li>
-                        <li>Aduan Warga</li>
-                        <li>Peringatan Bencana</li>
-                        <li>Simata</li>
-                        <li>Saran Dan Masukan</li>
+                        <li><a href="#community">Community</a></li>
+                        <li><a href="#citizen-report">Citizen Report</a></li>
+                        <li><a href="#disaster-alert">Disaster Alert</a></li>
+                        <li><a href="#city-sight">City Sight</a></li>
+                        <li><a href="#contact-us">Feed Back</a></li>
                     </ul>
                 </div>
 
