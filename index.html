@@ -28,7 +28,7 @@
             </div>
             <div class="main_list" id="mainListDiv">
                 <ul>
-                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#dummy">Beranda</a></li>
                     <li>
                         <a href="#about" class="dropdown-toggle" onclick="toggleDropdown(event, this)">
                             <span>Tentang Kota</span>
@@ -62,8 +62,13 @@
                         </a>
                         <div class="dropdown">
                             <ul>
-                                <li><a href="#announcement1">Komunitas</a></li>
-                                <li><a href="#announcement2">Saran & Masukan</a></li>
+                                <li>
+                                    <a href="javascript:void(0);" onclick="openTab('saran-masukan');">Saran & Masukan</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" onclick="openTab('komunitas');">Komunitas</a>
+                                </li>
+                                                        
                             </ul>
                         </div>
                     </li>
@@ -76,7 +81,7 @@
     </nav>
 
     <!-- bagian home selesai -->
-    <section class="home">
+    <section " class="home">
         <div class="img">
             <img src="images/gedung-sate.png" alt="Gedung Sate">
         </div>
@@ -181,11 +186,21 @@
     <section class="pariwisata">
     </section>
 
+    <div class="tab-content" id="saran-masukan">
+        <h2>Saran & Masukan</h2>
+        <p>Ini adalah konten Saran & Masukan.</p>
+    </div>
+    
+    <div class="tab-content" id="komunitas" style="display: none;">
+        <h2>Komunitas</h2>
+        <p>Ini adalah konten Komunitas.</p>
+    </div>
+    
     <!-- ini nanti karena blm memuat apa aja ang ada di dalamnya -->
     <section class="credit">
         <footer>
             <div class="left-section">
-                <h2>SmartCity</h2>
+                <h2>Kota Bandung</h2>
             </div>
             <div class="right-section">
                 <div class="section">
@@ -230,7 +245,8 @@
     </section>
 
     <!-- bagian navbar dropdown dipisah dengan menggunakan js tab hidden isi belum di tentukan -->
-
+  
+    
 
 
     <script src="javascript/dropdown.js"></script>

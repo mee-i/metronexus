@@ -990,3 +990,10 @@ footer {
         text-align: left;
     }
 }
+.tab-content {
+    display: none; /* Sembunyikan semua tab secara default */
+}
+
+.tab-content.active {
+    display: block; /* Tampilkan tab yang aktif */
+}
