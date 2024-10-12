@@ -963,7 +963,6 @@ footer {
   background-size: cover;
   background-repeat: no-repeat;
   object-fit: cover;
-  filter: drop-shadow(var(--drop-shadow));
   transition: var(--transition-10);
 }
 
@@ -987,7 +986,6 @@ footer {
     background-color: #00FF0010;
 } */
 .fitur:hover .image:hover {
-  filter: drop-shadow(var(--drop-shadow-2));
   transform: scale(1.05);
   border-radius: 50px;
 }
