@@ -1,4 +1,4 @@
-# Web Design
+# Metronexus Web Design
 
 Welcome to the **Web Design** repository, created by the NaN team! This project is for infofest competition.
 <br>
